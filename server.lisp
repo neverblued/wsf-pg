@@ -11,5 +11,5 @@
 
 (defmethod respond ((server database-server) request)
   (aif (server-database server)
-       (with-database it (call-next-method))
+       (postgrace:with-database it (call-next-method))
        (call-next-method)))
