@@ -3,7 +3,7 @@
 ;; LLGPL -> http://opensource.franz.com/preamble.html
 
 (defpackage #:wsf-pg
-  (:use #:cl #:cl-blackjack
-        #:wsf #:postgrace)
+  (:use #:cl #:blackjack #:wsf #:postgrace)
   (:export #:database-server
-           #:server-database))
+           #:server-database
+           #:with-server-database))
